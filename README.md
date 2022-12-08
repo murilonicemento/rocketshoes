@@ -2,7 +2,7 @@
 Projeto criado através da plataforma Rocketseat - Trilha Discover
 
 ## Deploy da aplicação
-
+https://rocketshoes-mu.vercel.app/
 
 ## Tecnologias utilizadas
 + HTML5
@@ -16,4 +16,4 @@ Projeto criado através da plataforma Rocketseat - Trilha Discover
 
 ## Home 
 
-<img src=".github/project-mobile.png">
+<img src=".github/project.png">

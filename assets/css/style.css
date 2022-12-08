@@ -17,8 +17,16 @@
 }
 
 body {
+    width: 1440px;
+    height: 1080px;
     background-color: var(--background);
     font-family: Roboto, "sans-serif";
+}
+
+a {
+    text-decoration: none;
+    color: var(--background);
+    transition: .3s;
 }
 
 ul {
@@ -29,6 +37,11 @@ ul {
 ul li {
     list-style: none;
     cursor: pointer;
+    transition: .3s;
+}
+
+ul li:hover {
+    color: var(--text-description);
 }
 
 /*HEADER*/
@@ -36,9 +49,13 @@ header {
     display: flex;
     margin-bottom: 103px;
 }
-header > img {
+
+header>img {
     margin-top: 39px;
     margin-left: 60px;
+}
+header img:last-child {
+    margin-left: 80px;
 }
 nav ul {
     margin-top: 49px;
@@ -48,6 +65,7 @@ nav ul {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 header input {
     width: 220px;
     height: 45px;
@@ -62,9 +80,108 @@ header input::placeholder {
     background-position: 13px;
     font-family: Roboto, "sans-serif";
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-header input:focus-within {
-    
+/*ASIDE*/
+aside {
+    width: 357px;
+    height: 533px;
+    margin-right: 72px;
+    margin-left: 50px;
+}
+
+aside h1 {
+    margin-bottom: 21px;
+    font-size: 60px;
+}
+
+aside p {
+    margin-bottom: 21px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-description);
+}
+
+aside h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+aside button {
+    width: 274px;
+    height: 90px;
+    background-color: var(--button);
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--background);
+    cursor: pointer;
+    transition: .4s;
+}
+
+aside button:hover {
+    background-color: var(--main-background);
+    color: var(--text);
+}
+
+/*MAIN*/
+main {
+    width: 900px;
+    height: 914px;
+    background-color: var(--main-background);
+    float: right;
+    margin-top: -723px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main div {
+    display: flex;
+    gap: 37px;
+    margin-bottom: -150px;
+}
+
+main div span {
+    display: flex;
+    border-bottom: 5px solid var(--button);
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer ul {
+    margin-right: 77px;
+    margin-left: 47px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+footer ul li {
+    gap: 90px;
+}
+
+footer div {
+    width: 437px;
+    height: 166px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer);
+    background-image: url(/assets/img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 313px;
+    background-position-y: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
 }
