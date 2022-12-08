@@ -16,3 +16,55 @@
     --text-description: #9C9696;
 }
 
+body {
+    background-color: var(--background);
+    font-family: Roboto, "sans-serif";
+}
+
+ul {
+    display: flex;
+    gap: 90px;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    margin-bottom: 103px;
+}
+header > img {
+    margin-top: 39px;
+    margin-left: 60px;
+}
+nav ul {
+    margin-top: 49px;
+    margin-right: 82px;
+    margin-left: 114px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header input {
+    width: 220px;
+    height: 45px;
+    margin-top: 42px;
+    border: none;
+}
+
+header input::placeholder {
+    padding-left: 47px;
+    background-image: url(/assets/img/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 13px;
+    font-family: Roboto, "sans-serif";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header input:focus-within {
+    
+}
